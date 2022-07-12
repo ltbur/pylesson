@@ -30,7 +30,8 @@ print(df_T)
 li=df.values
 print(li)
 
-kokugo.df.to_csv("export1.csv")
+
+kokugo_df.to_csv("export1.csv")
 
 kokugo_df.to_csv("export2.csv",index=False)
 
