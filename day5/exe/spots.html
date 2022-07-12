@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e9f10026b65c2ab04b1d662c0d724820 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e9f10026b65c2ab04b1d662c0d724820" ></div>
+        
+</body>
+<script>    
+    
+            var map_e9f10026b65c2ab04b1d662c0d724820 = L.map(
+                "map_e9f10026b65c2ab04b1d662c0d724820",
+                {
+                    center: [36.57234515572543, 136.6568610528364],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_889a7b725234be78fbcba46df1d34414 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            var marker_aa60c5aa183d29e600f2d2148851af4d = L.marker(
+                [36.564957, 136.649607],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_aa60c5aa183d29e600f2d2148851af4d.bindTooltip(
+                `<div>
+                     犀川を水源として長町を流れる用水。古くから人々の生活の場で重要な役割を果たしてきた。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e733b141ca17f15a57a93a81b22b7525 = L.marker(
+                [36.572303, 136.663629],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_e733b141ca17f15a57a93a81b22b7525.bindTooltip(
+                `<div>
+                     金沢市内にある三茶屋街の一つで、国の重要伝統的建造物群保存地区。浅野川沿いにある情緒豊かな茶屋街。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0bb9d9acada1677d3cc2a34d97b60040 = L.marker(
+                [36.563229, 136.652423],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_0bb9d9acada1677d3cc2a34d97b60040.bindTooltip(
+                `<div>
+                     犀川を水源として長町に流れる用水。昔と変わらない情緒と風情を感じることができる。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83cdb034d91f54c09e62a26e7c967009 = L.marker(
+                [36.552713, 136.673291],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_83cdb034d91f54c09e62a26e7c967009.bindTooltip(
+                `<div>
+                     天徳院の下馬腰掛所があった所を下馬先といい、昔は天徳院の鎮守白山の社があった。武士はここで馬を降りて天徳院に詣でた。現在は地蔵堂が残り、下馬地蔵と呼ばれている。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00da353678e58e64b3c967543b123a98 = L.marker(
+                [36.554676, 136.653909],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_00da353678e58e64b3c967543b123a98.bindTooltip(
+                `<div>
+                     金沢市内を流れる二つの大きな川の一つ。金沢の文豪、室生犀星がこよなく愛した川で、その豪快な流れから「男川」と呼ばれる。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_615a048d3a9819ed52b8dec577587dca = L.marker(
+                [36.556516, 136.66069],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_615a048d3a9819ed52b8dec577587dca.bindTooltip(
+                `<div>
+                     鈴木大拙を記念し、その生誕の地に建てた記念碑。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37fae3272e3fa2af5108434d7df359b5 = L.marker(
+                [36.607656, 136.596891],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_37fae3272e3fa2af5108434d7df359b5.bindTooltip(
+                `<div>
+                     藩政期の海の豪商、銭屋五兵衛の立像。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c3bda1e8284422adb30a8995c556179 = L.marker(
+                [36.570485, 136.677293],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_0c3bda1e8284422adb30a8995c556179.bindTooltip(
+                `<div>
+                     卯辰山の望湖台の入口にある金沢の三文豪の一人・徳田秋聲の文学碑。土塀を形どった姿で、秋聲を讃えていた同郷の室生犀星の筆による年譜と、本人自筆の文章が陶板に書かれている。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d18658204bc35bbea7e30953c95ad9ea = L.marker(
+                [36.564133, 136.650087],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_d18658204bc35bbea7e30953c95ad9ea.bindTooltip(
+                `<div>
+                     かつての藩士が住んでいた屋敷跡があり、土塀の続く町並みが広がる。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6c3ebeb4071061ce73c54fbff523d63 = L.marker(
+                [36.556817, 136.647316],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_d6c3ebeb4071061ce73c54fbff523d63.bindTooltip(
+                `<div>
+                     金沢市内にある三茶屋街の一つ。出格子が美しい茶屋様式の二階建ての家並みが広がる。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c4dff34dca4b67faa62fe3394b9d00af = L.marker(
+                [36.532459, 136.666768],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_c4dff34dca4b67faa62fe3394b9d00af.bindTooltip(
+                `<div>
+                     金沢最大の墓地であり、前田家墓地をはじめ多くの著名人や市民の墓がある。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d23db989d6f7da368246ee96adf246c = L.marker(
+                [36.566594, 136.662106],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_5d23db989d6f7da368246ee96adf246c.bindTooltip(
+                `<div>
+                     石川門下から大手堀方向へと続く散歩道であり、大手堀近くに白鳥の像がたたずんでいる。天然の緑のトンネルの下を歩いて行くと、金沢ゆかりの三文豪をはじめ、いろいろな彫刻と出会うことができる彫刻の小径となっている。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34ff0eac75cdd05a76c121e2a89fb068 = L.marker(
+                [36.572587, 136.666548],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_34ff0eac75cdd05a76c121e2a89fb068.bindTooltip(
+                `<div>
+                     金沢市内にある三茶屋街の一つであり、国の重要伝統的建造物群保存地区。キムスコ(木虫籠)と呼ばれる美しい出格子がある古い街並みが残る。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c56c1b7fbcc44d05397e37ff3fbf648b = L.marker(
+                [36.555363, 136.656393],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_c56c1b7fbcc44d05397e37ff3fbf648b.bindTooltip(
+                `<div>
+                     金沢市立新竪町小学校運動場に隣接した小公園の奥に立つ。記念碑にはめこまれたレリーフは、深い思索と英知にあふれ、ありし日の雪嶺の面影を忍ぶことができる。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c780d1364b30076cb23c4751a97c871 = L.marker(
+                [36.554822, 136.654723],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_2c780d1364b30076cb23c4751a97c871.bindTooltip(
+                `<div>
+                     金沢の三文豪の一人・室生犀星の文学碑。「小景異情」の一節あんずの詩が刻まれている
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3e261ab87e21a8b84df077a2487b7ea = L.marker(
+                [36.533985, 136.661661],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_e3e261ab87e21a8b84df077a2487b7ea.bindTooltip(
+                `<div>
+                     金沢の三文豪の一人・室生犀星が眠る墓。野田山墓地の一角にある。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10dc1f9bb8ace620f8e199a91ad814f9 = L.marker(
+                [36.572981, 136.66298],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_10dc1f9bb8ace620f8e199a91ad814f9.bindTooltip(
+                `<div>
+                     浅野川にかかる橋で、泉鏡花の「化鳥」「照葉狂言」の舞台。橋を渡るごとに一文支払ったことから別名「一文橋」とも言われていた。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81a7ff8097d2203ef0947592d9ef2e7a = L.marker(
+                [36.571092, 136.678103],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_81a7ff8097d2203ef0947592d9ef2e7a.bindTooltip(
+                `<div>
+                     標高141mの望湖台からは、金沢の黒光りする屋根瓦の町並みや日本海・白山連峰まで一望することができる。江戸時代には、城を見下ろす場所であったため一般の入山は禁止されていた。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b6ee249740791f6512b9a4f25d769d4 = L.marker(
+                [36.559851, 136.671204],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_4b6ee249740791f6512b9a4f25d769d4.bindTooltip(
+                `<div>
+                     宝町と天神町を結ぶ坂。昔、小立野と田井村を往復する農夫が使った馬道である。坂の途中には不動尊が鎮座している。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95fbd9cf4b69d1ae50128f69131a7a80 = L.marker(
+                [36.577912, 136.648904],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_95fbd9cf4b69d1ae50128f69131a7a80.bindTooltip(
+                `<div>
+                     金沢の玄関口。東広場では、金沢を訪れる人に差し出す雨傘をイメージし、おもてなしの心を表わしたガラスのドーム「もてなしドーム」や、伝統芸能に使われる鼓をイメージした「鼓門」を見ることができる。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7243de6fd94055bf485d018bbd7087b = L.marker(
+                [36.559638, 136.668747],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_f7243de6fd94055bf485d018bbd7087b.bindTooltip(
+                `<div>
+                     小立野台地にある坂。木曽の山中のような幽すいなところであることからこの名がつけられた。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e977053f76996357356c127e83690a72 = L.marker(
+                [36.485789, 136.757673],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_e977053f76996357356c127e83690a72.bindTooltip(
+                `<div>
+                     金沢の奥座敷“湯涌温泉街”にある足湯。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33927cbe73a198909fca1493f183566c = L.marker(
+                [36.561919, 136.656927],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_33927cbe73a198909fca1493f183566c.bindTooltip(
+                `<div>
+                     1631年の金沢城大火の後、防火のために犀川の水を引いて造られた用水。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8718dd7cfa2e1936e0818210952b93f = L.marker(
+                [36.557735, 136.675721],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_d8718dd7cfa2e1936e0818210952b93f.bindTooltip(
+                `<div>
+                     小立野から椿原神社の横を通り、浅野川の川岸平地に続く坂道。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04ba02cb4720ed522611c9010dfbfab0 = L.marker(
+                [36.559416, 136.673065],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_04ba02cb4720ed522611c9010dfbfab0.bindTooltip(
+                `<div>
+                     藩政時代、農民が馬を引いてしばしば上下したことからその名がついた馬坂から、菅原道真を祀り、「天満様」と呼ばれる椿原神社に至る古い家並が続く通り。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6da72041e1a4e409cfd25b27f840e257 = L.marker(
+                [36.55406, 136.668401],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_6da72041e1a4e409cfd25b27f840e257.bindTooltip(
+                `<div>
+                     藩政時代、足軽二十人組が住んでいたことから名付けられた坂。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f15d15960501c3ebde2d713241dddfc5 = L.marker(
+                [36.561816, 136.665944],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_f15d15960501c3ebde2d713241dddfc5.bindTooltip(
+                `<div>
+                     かつて付近に木こりが通う八つの坂があり、そのうちの残った1つが八坂と名付けられた。延長約50mのすらりと真っ直ぐに伸びた美しい坂道。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b9037a2c8a152f827dc3c29e04f259c = L.marker(
+                [36.613566, 136.606525],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_0b9037a2c8a152f827dc3c29e04f259c.bindTooltip(
+                `<div>
+                     大野川にかかる橋。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ca027f0127fe36abed7cbf66644d5ac = L.marker(
+                [36.555654, 136.666191],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_3ca027f0127fe36abed7cbf66644d5ac.bindTooltip(
+                `<div>
+                     本多町の奥から小立野へと上る坂。藩政時代初期、篠原出羽守が娘を本庄主馬に嫁がせる時に、荷物を運ぶために切り開いたと伝えられる坂道。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bceda26e49b9b4423f72b0143781acc4 = L.marker(
+                [36.5566619, 136.6473336],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_bceda26e49b9b4423f72b0143781acc4.bindTooltip(
+                `<div>
+                     作家島田清次郎が青年期を過ごした「吉米楼」跡に、茶屋家屋の外観を再現した資料館。清次郎に関する資料が展示されているほか、観光ボランティアガイド「まいどさん」が常駐し、周辺散策の案内も行っている。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fdbceb2fe5ba929af8a68ad56dd9ee27 = L.marker(
+                [36.5644527, 136.6495665],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_fdbceb2fe5ba929af8a68ad56dd9ee27.bindTooltip(
+                `<div>
+                     長町にある休憩館。休憩室やトイレ、展示コーナーがあるほか、観光ボランティアガイド「まいどさん」が常駐し、周辺散策の案内も行っている。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_005a9d50fc40b702f4d884990f2f3080 = L.marker(
+                [36.5723574, 136.6658403],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_005a9d50fc40b702f4d884990f2f3080.bindTooltip(
+                `<div>
+                     江戸時代末期の町家を復原した、東山にある休憩館。観光ボランティアガイド「まいどさん」が常駐し、周辺散策の案内も行っている。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d33874f9d0b73a6311c981e19e35fc21 = L.marker(
+                [36.573068, 136.667921],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_d33874f9d0b73a6311c981e19e35fc21.bindTooltip(
+                `<div>
+                     金沢市内にある三寺院群の一つで、国の重要伝統的建造物群保存地区。卯辰山のふもとに約50の寺院が散在する。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_859ba5d9f397623dd48518d1c0e83960 = L.marker(
+                [36.572755, 136.661312],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_859ba5d9f397623dd48518d1c0e83960.bindTooltip(
+                `<div>
+                     六代加賀藩主 前田吉徳(よしのり)から藩士 遠田自省(よりみ)（勘右衛門）が拝領したといわれるツツジ（遠田のつつじ）が残る日本庭園風の緑地。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0566ec759e2e2d160a8f596a437922e = L.marker(
+                [36.56509, 136.649333],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_e0566ec759e2e2d160a8f596a437922e.bindTooltip(
+                `<div>
+                     藩政時代の長屋門を修復し、一般公開している。敷地内には見事な池泉回遊式庭園を配し、藩政時代の面影を残している。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10b3faee4574f8dc626ab4f8fe24e7cb = L.marker(
+                [36.5713409, 136.6593657],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_10b3faee4574f8dc626ab4f8fe24e7cb.bindTooltip(
+                `<div>
+                     一般に無料開放されている旧商家を復元した大正浪漫の建物。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f787f0a0522a3735f7633e7f9352a51 = L.marker(
+                [36.569673, 136.670574],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_3f787f0a0522a3735f7633e7f9352a51.bindTooltip(
+                `<div>
+                     金沢の三文豪の一人・泉鏡花の文学碑。卯辰山への登り口の脇にひっそりと建っており、幼い頃母を失った鏡花の心情が伝わる「はゝこひし　夕山桜　峰の松」の句が刻まれている。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14c91986d59ca0ce18f10d04f6c9aa57 = L.marker(
+                [36.55877, 136.660558],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_14c91986d59ca0ce18f10d04f6c9aa57.bindTooltip(
+                `<div>
+                     茶道美術の名品をはじめ江戸時代の絵画、古九谷、加賀蒔絵、加賀象嵌など、約1,000点を所蔵する金沢の茶道文化と伝統工芸を紹介する美術館です。希望の方には庭園が眺められる呈茶室で、抹茶と茶菓子を有料で提供しています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6399adb8de5fb8115cdf68b1f4b3dc13 = L.marker(
+                [36.558145, 136.668057],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_6399adb8de5fb8115cdf68b1f4b3dc13.bindTooltip(
+                `<div>
+                     国指定重要文化財である建物は、明治32年に石川県立金沢第ニ中学校として建てられました。昭和53年に民俗文化財展示館として開館し、平成19年に金沢くらしの博物館と改称しました。町家の座敷を再現し、金沢の風物詩や料理、昔ながらの生活用品、伝統産業の製作用具などを紹介しています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bebd8a40d00f86a1341666439b9b73f1 = L.marker(
+                [36.573757, 136.665987],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_bebd8a40d00f86a1341666439b9b73f1.bindTooltip(
+                `<div>
+                     全国生産量の約99％を占める金沢ならではの金箔を紹介する博物館です。金箔ができるまでの工程や製造道具の説明、美術工芸品の展示をとおして、１万分の１ミリの薄さの金箔の世界に触れることができます。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6c3c807963a4729a4570c13e4dae0d7 = L.marker(
+                [36.56267, 136.65035],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_e6c3c807963a4729a4570c13e4dae0d7.bindTooltip(
+                `<div>
+                     藩政時代からの薬種商「中屋薬舗」の建物を保存し、当時の商家の面影を残す「みせの間」などを復元しました。２階は金澤老舗百年会の協力による各老舗が秘蔵する貴重な資料の他、金沢の伝統的町民文化に関する品々を展示しています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7780744f4e30b36e934dc0614d83540 = L.marker(
+                [36.55772, 136.661369],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_f7780744f4e30b36e934dc0614d83540.bindTooltip(
+                `<div>
+                     D.T.Suzukiとして世界で知られる鈴木大拙は、金沢が生んだ仏教哲学者。生誕地そばに建つ当館は、「展示空間」「学習空間」「思索空間」を回廊で結ぶとともに、「玄関の庭」「露地の庭」「水鏡の庭」によって構成。大拙の考えや足跡をたどりながら、来館者自らが思索できる場となっています。設計は国際的な建築家・谷口吉生氏です。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1ebf9ea70ef6e5a4a441c855d571aad = L.marker(
+                [36.560867, 136.658258],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_b1ebf9ea70ef6e5a4a441c855d571aad.bindTooltip(
+                `<div>
+                     金沢21世紀美術館は、兼六園に隣接し、中心部に位置しています。「新しい文化の創造」と「新たなまちの賑わいの創出」を目的に開設されました。ガラス張りの円形の建物で、誰もがいつでも立ち寄ることができる｢まちに開かれた公園のような美術館｣を目指しています。無料ゾーンにも作品があり、体感することができます。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6808dc02093603efbd140fc6a493f64c = L.marker(
+                [36.561567, 136.658122],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_6808dc02093603efbd140fc6a493f64c.bindTooltip(
+                `<div>
+                     金沢能楽美術館は、加賀宝生に伝わる貴重な能面や能装束を収蔵展示する施設として建設されました。「加賀宝生」は、金沢の無形文化財に指定され、「能楽」は、ユネスコの無形文化遺産に登録されています。貴重な美術品と伝統芸能を次世代へ伝え、伝統を現代、さらに未来へと繋げていく新しい文化施設となることをめざしています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75136dbc79e4b4a886b7696c9437e17c = L.marker(
+                [36.559025, 136.648203],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_75136dbc79e4b4a886b7696c9437e17c.bindTooltip(
+                `<div>
+                     金沢の三文豪の一人で犀川をこよなく愛し、金沢を舞台にした作品も数多く残した、室生犀星の記念館です。犀川近くの生誕地跡に建ち、犀星の作品や直筆の原稿、遺品などを多数展示しています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3a065c7e5fa520533b7868a56c81c4d = L.marker(
+                [36.571444, 136.663096],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_b3a065c7e5fa520533b7868a56c81c4d.bindTooltip(
+                `<div>
+                     金沢の三文豪の一人、泉鏡花の世界をさまざまな角度からとらえ紹介した記念館。鏡花が生まれ育った当時の面影を色濃く残す茶屋街や｢義血俠血｣の舞台として知られる浅野川に程近い、鏡花の生家跡に建てられています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a6078384ab97797cb71d27ecdfa18e1 = L.marker(
+                [36.570902, 136.667162],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_0a6078384ab97797cb71d27ecdfa18e1.bindTooltip(
+                `<div>
+                     金沢の三文豪の一人で「女性を描かせたら神様」と評された自然主義作家・徳田秋聲を紹介する記念館。ゆかりの場所である「ひがし茶屋街」に近接し、多くの遺品、直筆原稿、初版本を展示する他、忠実に再現された書斎や代表作を和紙人形で紹介するシアターがあります。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77bdacbdb86ed6741b976e247868c00e = L.marker(
+                [36.485932, 136.75746],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_77bdacbdb86ed6741b976e247868c00e.bindTooltip(
+                `<div>
+                     独特の美人画で知られる詩人画家・竹久夢二が最愛の女性・笠井彦乃と幸せな時を過ごした地、湯涌温泉に立地します。画家・詩人・デザイナーなど、多くの才能を持つ夢二の豊かな芸術の世界を紹介しています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77760934404defeb288a220174ce854c = L.marker(
+                [36.569249, 136.663557],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_77760934404defeb288a220174ce854c.bindTooltip(
+                `<div>
+                     加賀藩士であり画人でもあった寺島蔵人の家屋・土蔵・土塀は、江戸時代中期の中級武家屋敷の姿を伝えるものとして、隣接する池泉回遊式の庭園とともに金沢市指定史跡となっています。邸内では同家伝来の書画工芸などを展示しています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d1ab040b23fdcca72dd489983dd314d = L.marker(
+                [36.562384, 136.650883],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_9d1ab040b23fdcca72dd489983dd314d.bindTooltip(
+                `<div>
+                     加賀藩祖前田利家とその夫人まつの次男前田利政を家祖とする加賀藩きっての名家である前田土佐守家の資料館です。加賀藩年寄役八家の一つとして、代々藩の重責を担ってきた土佐守家に伝来する古文書・書画・武具・調度品などを展示しています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ad075ecea0d64bf0df3fd1b91a1262e = L.marker(
+                [36.571283, 136.662707],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_3ad075ecea0d64bf0df3fd1b91a1262e.bindTooltip(
+                `<div>
+                     毎日11時、14時、16時にエジソンが発明した蝋管式蓄音器から昭和初期に活躍した大型高級蓄音器まで、実際に音色を聴くことができます。また、日曜日（10時30分、13時30分、15時30分）には、1927年米国ボストン製の自動再演ピアノの調べをお楽しみいただけます。テーマ別鑑賞会も随時開催。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53b6d6cae89909d9a6b0f0ac9db14ed5 = L.marker(
+                [36.55877, 136.660558],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_53b6d6cae89909d9a6b0f0ac9db14ed5.bindTooltip(
+                `<div>
+                     茶道美術の名品をはじめ江戸時代の絵画、古九谷、加賀蒔絵、加賀象嵌など、約1,000点を所蔵する金沢の茶道文化と伝統工芸を紹介する美術館です。希望の方には庭園が眺められる呈茶室で、抹茶と茶菓子を有料で提供しています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_234a9ca8df66e5bf4badb6df52f1d7f8 = L.marker(
+                [36.558145, 136.668057],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_234a9ca8df66e5bf4badb6df52f1d7f8.bindTooltip(
+                `<div>
+                     国指定重要文化財である建物は、明治32年に石川県立金沢第ニ中学校として建てられました。昭和53年に民俗文化財展示館として開館し、平成19年に金沢くらしの博物館と改称しました。町家の座敷を再現し、金沢の風物詩や料理、昔ながらの生活用品、伝統産業の製作用具などを紹介しています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e204d8d195c4fc9c7a0660873de53bc = L.marker(
+                [36.573757, 136.665987],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_8e204d8d195c4fc9c7a0660873de53bc.bindTooltip(
+                `<div>
+                     全国生産量の約99％を占める金沢ならではの金箔を紹介する博物館です。金箔ができるまでの工程や製造道具の説明、美術工芸品の展示をとおして、１万分の１ミリの薄さの金箔の世界に触れることができます。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffaee79c1bbe2fa9360b6a9e44c20a12 = L.marker(
+                [36.559291, 136.657889],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_ffaee79c1bbe2fa9360b6a9e44c20a12.bindTooltip(
+                `<div>
+                     金沢は近代日本を支えた多数の科学者や思想家を輩出した土地です。当館ではこれら偉人（化学者・高峰譲吉、土木技師・八田與一など）の生涯を分野別に常設展示で紹介しています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f091338a9b139bfab411a5db1235544 = L.marker(
+                [36.56267, 136.65035],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_5f091338a9b139bfab411a5db1235544.bindTooltip(
+                `<div>
+                     藩政時代からの薬種商「中屋薬舗」の建物を保存し、当時の商家の面影を残す「みせの間」などを復元しました。２階は金澤老舗百年会の協力による各老舗が秘蔵する貴重な資料の他、金沢の伝統的町民文化に関する品々を展示しています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4adf3472fa7f3637379199c3edac2774 = L.marker(
+                [36.570819, 136.663707],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_4adf3472fa7f3637379199c3edac2774.bindTooltip(
+                `<div>
+                     建物は、浅野川大橋近くのランドマーク的存在として市民に親しまれ、市指定保存建造物・国登録有形文化財にもなっています。金沢ゆかりの作家五木寛之氏の愛用品や直筆原稿、泉鏡花文学賞受賞作品が展示されているほか、文学・文芸の活動場所として利用できます。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1969c567c13e2822a52c8c2f133d35b3 = L.marker(
+                [36.55772, 136.661369],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_1969c567c13e2822a52c8c2f133d35b3.bindTooltip(
+                `<div>
+                     D.T.Suzukiとして世界で知られる鈴木大拙は、金沢が生んだ仏教哲学者。生誕地そばに建つ当館は、「展示空間」「学習空間」「思索空間」を回廊で結ぶとともに、「玄関の庭」「露地の庭」「水鏡の庭」によって構成。大拙の考えや足跡をたどりながら、来館者自らが思索できる場となっています。設計は国際的な建築家・谷口吉生氏です。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a871d3481b9f13b1db65b5aac1c35cf3 = L.marker(
+                [36.568385, 136.640228],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_a871d3481b9f13b1db65b5aac1c35cf3.bindTooltip(
+                `<div>
+                     金沢市民芸術村は、大正末期から昭和初期に建設された旧紡績工場倉庫群を改修した、演劇、美術、音楽の芸術創造の場です。年中無休、24時間ご利用いただけます。広大な広場は緑にあふれ、いつでも気軽に集える場所として、多くの皆様に愛されています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_496a07864ae7ed726df8f3a077bb1f4c = L.marker(
+                [36.4943, 136.749563],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_496a07864ae7ed726df8f3a077bb1f4c.bindTooltip(
+                `<div>
+                     金沢の奥座敷として古くから親しまれてきた湯涌温泉の入口にあります。明治・大正期の貴重な建物を保存活用するため、里山の新たな文化拠点として整備しました。５つの登録有形文化財を含む古民家群は、藍染・草木染、版画制作のための専門設備をもった工房やギャラリーへ改装、誰もが使える自由な創作活動・作品発表の場となっています。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c80e66edf8319e0342fdd87c592c28d3 = L.marker(
+                [36.490854, 136.756454],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_c80e66edf8319e0342fdd87c592c28d3.bindTooltip(
+                `<div>
+                     江戸時代の加賀藩などに建てられた町家や武士住宅、農家など文化財建造物を移築・保存し、公開している博物館です。湯涌温泉のある里山の自然の中で、当時のくらしを感じることができます。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09c70332511011e2fb904bb89e868ad7 = L.marker(
+                [36.5554081, 136.6511979],
+                {}
+            ).addTo(map_e9f10026b65c2ab04b1d662c0d724820);
+        
+    
+            marker_09c70332511011e2fb904bb89e868ad7.bindTooltip(
+                `<div>
+                     金沢建築館は、建築と都市をテーマとし、常設展示室には、金沢市の名誉市民第一号である建築家谷口吉郎氏の代表作であり、国賓などを接遇する「迎賓館赤坂離宮和風別館」の広間と茶室が展示されています。現存する谷口建築を金沢に再現することにより、吉郎氏の業績を顕彰すると同時に、日本を代表する和風建築を実物展示する新しい形式の施設です。また、企画展示室では展示やイベントを通して、建築や都市に関わる情報を分かりやすく市民や金沢に訪れる人に提供し、建築文化やまちづくりに対する関心に応えます。
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
